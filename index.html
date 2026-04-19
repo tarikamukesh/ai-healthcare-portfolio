@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Healthcare Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR (ALWAYS FIRST) -->
+  <nav>
+  <li><a href="#skills"><i class="fas fa-brain"></i></a></li>
+  </nav>
+
+  <h2>AI PORTFOLIO</h2>
+  <ul>
+    <li><a href="#home"><i class="fas fa-home"></i></a></li>
+    <li><a href="#about"><i class="fas fa-user"></i></a></li>
+    <li><a href="#healthcare"><i class="fas fa-heartbeat"></i></a></li>
+    <li><a href="#projects"><i class="fas fa-flask"></i></a></li>
+  </ul>
+</nav>
+
+<section id="home" class="hero">
+  <h1>AI in Healthcare</h1>
+  <p>Biomedical Portfolio | M. Tarika | Roshni.P</p>
+   <div class="cards">
+
+   <a href="#about" class="card">ABOUT US</a>
+   <a href="#healthcare" class="card">AI IN HEALTHCARE</a>
+   <a href="#projects" class="card">PROJECTS</a>
+   <a href="#course" class="card">COURSE OUTCOMES & LEARNING</a>
+   <a href="#skills" class="card">SKILLS</a>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p class="about-summary">
+  Driven biomedical engineering students, we aim to explore the integration of artificial intelligence with healthcare systems. 
+  Our goal is to acquire knowledge, develop innovative solutions, and contribute towards advancing medical technology for better patient outcomes. 
+  Through this portfolio, we showcase our learning, projects, and passion for creating impactful biomedical innovations.
+  </p>
+
+  <div class="about-box">
+
+    <!-- TARIKA -->
+    <div class="profile">
+      <img src="tarika.jpg">
+      <h3>M. Tarika</h3>
+      <p>SRM IST |Biomedical Engineering</p>
+      <p>Reg No: RA2411013010048</p>
+      <a href="tarika_resume.pdf" class="btn">View Resume</a>
+    </div>
+
+    <!-- ROSHNI -->
+    <div class="profile">
+      <img src="roshni.jpg">
+      <h3>Roshni</h3>
+      <p>SRM IST |Biomedical Engineering</p>
+      <p>Reg No: RA2411013010054</p>
+      <a href="roshni_resume.pdf" class="btn">View Resume</a>
+    </div>
+    
+  </div>
+</section>
+
+<!-- HEALTHCARE -->
+<section id="healthcare">
+    
+  <h2>AI in Healthcare</h2>
+  <div class="cards">
+    <div class="card" onclick="openHealth('h1')">Disease Prediction</div>
+    <div class="card" onclick="openHealth('h2')">Medical Imaging</div>
+    <div class="card" onclick="openHealth('h3')">Wearables</div>
+    <div class="card" onclick="openHealth('h4')">Diagnosis</div>
+    <div class="card" onclick="openHealth('h5')">Robotic Surgery</div>
+    <div class="card" onclick="openHealth('h6')">Drug Discovery</div>
+  </div>
+  <div id="health-details"></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card" onclick="openProject('p1')">Electrospun Scaffold</div>
+    <div class="card" onclick="openProject('p2')">Orthopaedic Implants</div>
+    <div class="card" onclick="openProject('p3')">Tremor Device</div>
+    <div class="card" onclick="openProject('p4')">Hormone Kit</div>
+    <div class="card" onclick="openProject('p5')">Kidney Test</div>
+  </div>
+  <div id="project-details"></div>
+</section>
+
+<section id="course">
+  <h2>Course Outcomes & Learning</h2>
+
+  <!-- SUMMARY -->
+  <p class="about-summary">
+    Through this course, we gained foundational and advanced knowledge in Artificial Intelligence 
+    and its applications in healthcare. The course enhanced our understanding of machine learning, 
+    deep learning, medical imaging, and real-world biomedical applications.
+  </p>
+
+  <!-- UNITS -->
+  <div class="cards">
+
+    <div class="card">
+      <h3>Unit 1</h3>
+      <p>Introduction to AI.</p>
+    </div>
+
+    <div class="card">
+      <h3>Unit 2</h3>
+      <p>data structre and search algorithms.</p>
+    </div>
+
+    <div class="card">
+      <h3>Unit 3</h3>
+      <p>adverserial search problem and intelligent agent.</p>
+    </div>
+
+    <div class="card">
+      <h3>Unit 4</h3>
+      <p>knowledge and reasoning.</p>
+    </div>
+
+    <div class="card">
+      <h3>Unit 5</h3>
+      <p>machine learning and planning problem.</p>
+    </div>
+
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <h3>Certifications</h3>
+
+  <div class="gallery">
+    <img src="tarika_cert.jpg">
+    <img src="roshni_cert.jpg">
+  </div>
+
+  <!-- ASSIGNMENTS -->
+  <h3>Assignments & Tasks</h3>
+
+  <p class="about-summary">
+    As part of this course, we completed various assignments and tasks including case studies, 
+    project-based learning, and practical applications of AI in biomedical systems. These activities 
+    helped us strengthen our analytical thinking, problem-solving skills, and understanding of real-world 
+    healthcare challenges.
+  </p>
+
+</section>
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="cards">
+    <div class="card">Machine Learning</div>
+    <div class="card">Deep Learning</div>
+    <div class="card">Data Analysis</div>
+    <div class="card">Biomedical Engineering</div>
+    <div class="card">Signal Processing</div>
+    <div class="card">HTML & CSS</div>
+    <div class="card">AI in Healthcare</div>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 M. Tarika</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

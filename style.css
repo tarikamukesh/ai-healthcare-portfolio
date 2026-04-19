@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: #020617;
+  scroll-behavior: smooth;
+}
+
+/* BACKGROUND */
+body::before {
+  content: "";
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0,255,255,0.05),
+    rgba(0,255,255,0.05) 2px,
+    transparent 2px,
+    transparent 25px
+  );
+  animation: move 25s linear infinite;
+  z-index: -1;
+}
+
+@keyframes move {
+  100% { transform: translate(-200px,-200px); }
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  color: cyan;
+  margin: 10px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(#06b6d4,#3b82f6);
+}
+
+/* SECTIONS */
+section {
+  padding: 60px;
+  text-align: center;
+}
+
+/* ABOUT */
+.about-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-box img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===== GLASS CARDS ===== */
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+
+  padding: 15px 30px;
+  margin: 10px;
+
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+.cards a.card {
+  text-decoration: none;
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 20px cyan;
+}
+/* GALLERY */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#project-details, #health-details {
+  margin-top: 20px;
+  padding: 20px;
+  background: black;
+}
+.profile {
+  background: rgba(30,41,59,0.85);
+  padding: 20px;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile h3 {
+  margin: 10px 0 5px;
+}
+
+.profile p {
+  font-size: 14px;
+}
+/* ADD NEW STYLES BELOW THIS */
+
+.about-summary {
+  max-width: 800px;
+  margin: 10px auto 30px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#skills .card {
+  background: linear-gradient(135deg, #1e293b, #66e90e);
+}
+#course h3 {
+  margin-top: 30px;
+  color: rgb(255, 0, 0);
+}
