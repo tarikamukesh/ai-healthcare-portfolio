@@ -57,8 +57,8 @@ nav a {
 
 /* SECTIONS */
 section {
-  padding: 60px;
-  text-align: center;
+  padding: 80px 20px;
+
 }
 
 /* ABOUT */
@@ -100,6 +100,8 @@ section {
   transition: 0.3s;
 
   box-shadow: 0 0 10px rgba(0,255,255,0.3);
+  font-size: 14px;
+  letter-spacing: 0.5px;
 }
 
 .cards a.card {
@@ -170,3 +172,12 @@ section {
   margin-top: 30px;
   color: rgb(255, 0, 0);
 }
+.profile:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
