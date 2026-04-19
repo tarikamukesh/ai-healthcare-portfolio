@@ -179,5 +179,50 @@ section {
 html {
   scroll-behavior: smooth;
 }
+/* CENTER ALL SECTIONS CONTENT */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* CENTER HEADINGS */
+section h2 {
+  text-align: center;
+}
+
+/* FIX CARDS ALIGNMENT */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* REMOVE EXTRA SPACE */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* REMOVE GAP BETWEEN SECTIONS */
+section {
+  margin: 0;
+}
+/* GLOBAL PAGE MARGIN */
+body {
+  padding: 20px;
+  background: #020617; /* keep your dark theme */
+}
+
+/* MAIN CONTENT WRAPPER EFFECT */
+section {
+  max-width: 1100px;
+  margin: 30px auto;
+  border-radius: 12px;
+}
+section {
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
 
 
